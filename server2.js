@@ -6,9 +6,8 @@ const PORT = process.env.PORT || 8080;
 
 // Parse JSON in request bodies
 app.use(express.json());
-
-// Serve all files in the "public" folder at the root
-app.use(express.static(path.join(__dirname, 'public')));
+//directiory
+app.use(express.static(path.join(__dirname)));
 
 // Your POST endpoint for calculating risk
 app.post('/calculate-risk', (req, res) => {
