@@ -17,7 +17,7 @@ document.getElementById('riskForm').addEventListener('submit', function(event) {
     familyDisease: familyDisease
   };
 
-  fetch('/calculate-risk', {
+  fetch('health-insurance-calculator-exfhhhggf0hgb8fu.uaenorth-01.azurewebsites.net/calculate-risk', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
