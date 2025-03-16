@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname)));
 
 // Your POST endpoint for calculating risk WE WILL TRY AZURE URL
-app.post('health-insurance-calculator-exfhhhggf0hgb8fu.uaenorth-01.azurewebsites.net', (req, res) => {
+app.post('health-insurance-calculator-exfhhhggf0hgb8fu.uaenorth-01.azurewebsites.net/calculate-risk', (req, res) => {
   const { age, bmi, bloodPressure, familyDisease } = req.body;
   let totalPoints = 0;
 
